@@ -243,6 +243,13 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+// PREF: disable Firefox Sync
+user_pref("identity.fxaccounts.enabled", false);
+
+// PREF: disable Firefox View
+user_pref("browser.tabs.firefox-view", false);
+user_pref("browser.tabs.firefox-view-next", false); // [FF119+]
+user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
