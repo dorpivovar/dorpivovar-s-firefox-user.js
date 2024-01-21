@@ -245,7 +245,8 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // Enter your personal overrides below this line:
 // PREF: disable Firefox Sync
 user_pref("identity.fxaccounts.enabled", false);
-
+// PREF: stop FF from closing when I close the last tab
+user_pref("browser.tabs.closeWindowWithLastTab", false);
 // PREF: disable Firefox View
 user_pref("browser.tabs.firefox-view", false);
 user_pref("browser.tabs.firefox-view-next", false); // [FF119+]
