@@ -276,6 +276,25 @@ user_pref("general.smoothScroll.currentVelocityWeighting", 1.0);
 user_pref("general.smoothScroll.stopDecelerationWeighting", 1.0);
 user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
 
+// PREF: enable container tabs
+user_pref("privacy.userContext.enabled", true);
+
+// PREF: show weather on New Tab page
+user_pref("browser.newtabpage.activity-stream.showWeather", true);
+user_pref("browser.newtabpage.activity-stream.system.showWeather", true);
+
+// PREF: restore Top Sites on New Tab page
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", true); // Shortcuts
+user_pref("browser.newtabpage.activity-stream.default.sites", ""); // clear default topsites
+
+// PREF: remove sponsored content on New Tab page
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // Sponsored shortcuts 
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false); // Recommended by Pocket
+user_pref("browser.newtabpage.activity-stream.showSponsored", false); // Sponsored Stories
+
+// PREF: remove default Top Sites (Facebook, Twitter, etc.)
+// [NOTE] This does not block you from adding your own.
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
